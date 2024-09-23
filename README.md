@@ -12,6 +12,7 @@
 
 ## Процесс получения данных из `source`
 
+```
 interface Source {
     measures: string[],
     annotations: Annotation,
@@ -22,3 +23,4 @@ interface Source {
 interface Annotation {
     [key: string]: string
 }
+```
