@@ -1,0 +1,14 @@
+@if(source != null){
+<span> Наименование: {{ source.name }}</span>
+
+<span> Показатели: {{ source.measures.join(", ") }}</span>
+
+<span class="annotations">
+  Аннотации: @for(item of annotations; track item[0]){
+  <span class="annotation">
+    <span class="header">{{ item[0] }}:</span>
+    <span>{{ item[1] }} </span></span
+  >
+  }
+</span>
+}

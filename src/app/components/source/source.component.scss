@@ -1,0 +1,20 @@
+:host {
+  border: 1px solid darkgray;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.annotations {
+  display: flex;
+  flex-direction: column;
+}
+
+.annotation {
+  display: flex;
+}
+
+.header {
+  font-weight: bold;
+  margin-right: 20px;
+}

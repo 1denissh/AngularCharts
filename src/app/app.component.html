@@ -1,0 +1,21 @@
+@if(data != null){
+
+<app-base-chart [data]="data!.data" [chartType]="chartType"></app-base-chart>
+
+<div class="controls">
+  <h1>Тип диаграммы</h1>
+  <label>
+    <input type="radio" checked name="chartType" value="line" [formControl]="chartTypeControl"/>
+    Линии
+  </label>
+  <label>
+    <input type="radio" name="chartType" value="bar" [formControl]="chartTypeControl"/>
+    Бары
+  </label>
+</div>
+
+<h1>Источники</h1>
+
+@for(item of data!.source; track item.name){
+<app-source [source]="item"></app-source>
+} }
